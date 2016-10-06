@@ -1,14 +1,11 @@
 /* eslint-disable no-undef */
 import { shallow } from 'enzyme';
-import App from './Info.jsx';
+import App from './App.jsx';
 
-describe('Info', () => {
-  const props = {
-    props: [{ title: 'x' }, { description: 'y' }, { version: 'z' }],
-  };
-  it('shows the API Info', () => {
-    const element = shallow(<App { ...props } />);
+describe('App', () => {
+  it('shows hello world', () => {
+    const element = shallow(<App/>);
 
-    expect(element.find('.info__title')).to.have.length(1);
+    expect(element.find('h1')).to.have.length(1);
   });
 });

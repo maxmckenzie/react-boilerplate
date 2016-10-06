@@ -3,12 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App.jsx';
 import logger from './helpers/logger';
 
-let json = require('./schemas/sample.json');
-const items = Object.keys(json).map(x => json[x]);
-
-logger.info(`Schema main.js: ${items}`);
-
 ReactDOM.render(
-  <App items={items} />,
+  <App />,
   document.getElementById('app')
 );

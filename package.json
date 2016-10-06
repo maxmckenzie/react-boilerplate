@@ -1,7 +1,7 @@
 {
-  "name": "full-stack-test",
+  "name": "React Boilerplate",
   "version": "0.0.1",
-  "description": "full stack test hitch",
+  "description": "webpack react",
   "main": "dist/main.js",
   "engines": {
     "node": "6.0.0",
